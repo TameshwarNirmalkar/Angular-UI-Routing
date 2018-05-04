@@ -1,0 +1,10 @@
+<section class="float-left">
+    <nav class="nav nav-pills nav-fill">
+        <button class="btn btn-primary btn-sm" 
+            ui-sref="{{ button.navigate }}" 
+            ui-sref-active="active" 
+            ng-repeat="button in $ctrl.buttonList">
+                {{ button.label }}
+        </button>
+    </nav>
+</section>
