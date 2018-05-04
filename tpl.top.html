@@ -1,0 +1,10 @@
+<div class="clearfix">
+    <section class="float-left">
+        <nav class="nav nav-pills nav-fill">
+            <button ui-sref="list" class="btn btn-primary btn-sm" ui-sref-active="active">Home</button>
+            <button ui-sref="list.detail({id:1})" class="btn btn-primary btn-sm" ui-sref-active="active">List</button>
+            <button ui-sref="todo" class="btn btn-primary btn-sm" ui-sref-active="active">Todo</button>
+        </nav>
+    </section>
+    <div class="float-right" ui-view="actions"></div>
+</div>
