@@ -10,35 +10,35 @@
                               //url: '/',
                               views: {
                                     '@': {
-                                          templateUrl: './views/layout.html',
+                                          templateUrl: './layout.html',
                                           controller: 'IndexCtrl'
                                     },
                                     'top@index': {
-                                          templateUrl: './views/tpl.top.html',
+                                          templateUrl: './tpl.top.html',
                                     },
                                     'left@index': {
-                                       templateUrl: './views/tpl.left.html',
+                                       templateUrl: './tpl.left.html',
                                     },
                                     'main@index': {
-                                          templateUrl: './views/tpl.main.html',
+                                          templateUrl: './tpl.main.html',
                                     },
                               },
                         })
                         .state('list', {
                               parent: 'index',
                               url: '/list',
-                              templateUrl: './views/list.html',
+                              templateUrl: './list.html',
                               controller: 'ListCtrl'
                         })
                         .state('list.detail', {
                               url: '/:id',
                               views: {
                                     'detail@index': {
-                                          templateUrl: './views/detail.html',
+                                          templateUrl: './detail.html',
                                           controller: 'DetailCtrl'
                                     },
                                     // 'actions@index': {
-                                    //       templateUrl: './views/actions.html',
+                                    //       templateUrl: './actions.html',
                                     //       controller: 'ActionCtrl'
                                     // },
                               },
@@ -48,11 +48,11 @@
                               url: '/todo',
                               views: {
                                     'detail@index': {
-                                          templateUrl: './views/todo.html',
+                                          templateUrl: './todo.html',
                                           controller: 'TodoCtrl'
                                     },
                                     'actions@index': {
-                                          templateUrl: './views/actions.html',
+                                          templateUrl: './actions.html',
                                           controller: 'ActionCtrl'
                                     },
                               },
